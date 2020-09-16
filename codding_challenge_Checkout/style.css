@@ -1,3 +1,18 @@
-
+main {
+  display: grid;
+  grid-template-areas: "header header" "contact product" "button button";
+}
+main h4 {
+  grid-area: header;
+}
+main section {
+  grid-area: contact;
+}
+main aside {
+  grid-area: product;
+}
+main button {
+  grid-area: button;
+}
 
 /*# sourceMappingURL=style.css.map */

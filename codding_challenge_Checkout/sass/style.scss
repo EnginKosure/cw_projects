@@ -1,0 +1,19 @@
+main {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "contact product"
+    "button button";
+  h4 {
+    grid-area: header;
+  }
+  section {
+    grid-area: contact;
+  }
+  aside {
+    grid-area: product;
+  }
+  button {
+    grid-area: button;
+  }
+}
