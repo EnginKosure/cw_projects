@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="checkout">Checkout</h1>
+      <section class="contact">
+        <div class="contact--info">
+          <h4>Contact information</h4>
+          <form action="" method="get" class="form">
+            <div class="form-email">
+              <label for="email">Email </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="Enter your email..."
+              />
+            </div>
+            <div class="form-phone">
+              <label for="phone">Phone </label>
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                required
+                placeholder="Enter your phone..."
+              />
+            </div>
+          </form>
+        </div>
+        <div class="contact--address">
+          <h4>Shipping address</h4>
+          <form action="" method="get" class="form">
+            <div class="form-name">
+              <label for="name">Full name </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="Enter your Full name..."
+              />
+            </div>
+            <div class="form-address">
+              <label for="address">Address </label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                required
+                placeholder="Enter your address..."
+              />
+            </div>
+            <div class="form-city">
+              <label for="city">City</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                required
+                placeholder="Enter your city..."
+              />
+            </div>
+            <div class="country-postcode">
+              <label for="country-select">Country</label>
+              <select name="countries" id="country-select">
+                <option value="turkey" selected>Turkey</option>
+                <option value="germany">Germany</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+              </select>
+
+              <label for="postcode">Post Code</label>
+              <input
+                type="text"
+                id="postcode"
+                name="postcode"
+                required
+                placeholder="Enter your postal code..."
+              />
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="preference"
+                name="preference"
+                checked
+              />
+              <label for="preference">See this information next time</label>
+            </div>
+          </form>
+        </div>
+      </section>
+      <aside class="basket"></aside>
+      <button>Continue</button>
+    </main>
+  </body>
+</html>
