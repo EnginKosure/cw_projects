@@ -18,17 +18,20 @@ function update1(e){
         discountPrice1 =dp1c*counter;
         total=discountPrice1+discountPrice2;
         console.log(normalPrice1);   
-    }else if(e=='-'){
+    }
+    else if(e=='-')
+    {
         if(counter > 1){
             counter -=  1;
             normalPrice1 =  np1c*counter;
             discountPrice1 =dp1c*counter;
             total=discountPrice1+discountPrice2;
-        }else if(counter== 1){
+        }
+        else if(counter== 1){
             counter -=  1;
             total=discountPrice2+0;
             normalPrice1 =  dp1c;
-            discountPrice1 =dp1c;
+        discountPrice1 =dp1c;
         }
     }
     document.getElementsByClassName('counter')[0].innerText=counter;
@@ -79,15 +82,4 @@ function update2(e){
     document.getElementsByClassName('price2')[0].innerText=normalPrice2.toFixed(2);
     document.getElementsByClassName('total')[0].innerText=(total).toFixed(2);
 };
-function myFunction() {
-    let myobj2 = document.getElementById("product2");
-    myobj2.remove();
-    let myobj1 = document.getElementById("product1");
-    myobj1.remove();
-  }
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-function removeCartItem(event) {
-    var buttonClicked = event.target
-    buttonClicked.parentElement.parentElement.remove()
-    updateCartTotal()
-}
