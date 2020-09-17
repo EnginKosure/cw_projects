@@ -5,5 +5,19 @@
       "product"
       "contact"
       "button" !important;
+    aside {
+      width: 90% !important;
+      left: 0 !important;
+      height: 95% !important;
+      .product {
+        .quantity-controller {
+          width: 50% !important;
+          height: 35px;
+        }
+      }
+    }
+  }
+  .continue {
+    width: 35% !important;
   }
 }
