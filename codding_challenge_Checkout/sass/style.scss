@@ -1,3 +1,4 @@
+@import "media";
 body {
   margin: 0 auto;
   padding: 0;
@@ -30,6 +31,29 @@ body {
         display: flex;
         margin: 20px 0;
       }
+      .contact--info {
+        margin-bottom: 60px;
+      }
+      .country {
+        margin-right: 20px;
+      }
+      .country-postcode {
+        display: flex;
+        margin-top: 30px;
+      }
+      .input-area {
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        i {
+          position: absolute;
+          color: #828282;
+          font-size: 16px;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 3%;
+        }
+      }
     }
     aside {
       grid-area: product;
@@ -39,16 +63,20 @@ body {
 
       position: relative;
       width: 60%;
+      height: 70%;
       left: 20%;
+
       .fazi {
         margin-top: 40px;
 
         .details {
+          font-family: "Montserrat", sans-serif;
           display: flex;
+          align-items: center;
           justify-content: space-between;
-          border-top: 1px solid gray;
-          padding: 0;
-          margin-bottom: -15px;
+          border-top: 1px solid #bdbdbd;
+          height: 40px;
+          width: 100%;
         }
       }
 
@@ -91,6 +119,7 @@ body {
           display: flex;
           justify-content: space-around;
           width: 40%;
+          position: relative;
         }
       }
 
@@ -102,11 +131,12 @@ body {
     }
     .continue {
       grid-area: button;
-      width: 20%;
+      width: 15%;
       padding: 14px 0;
       border-radius: 10px;
       background-color: #f2994a;
       color: #fff;
+      font-size: 20px;
       font-weight: 600;
       text-align: center;
       border: none;
@@ -119,6 +149,7 @@ body {
       font-size: 14px;
       border-radius: 5px;
       width: 100%;
+      height: 22px;
     }
     input[type="checkbox"] {
       width: 10%;
@@ -135,9 +166,12 @@ body {
       display: block;
     }
     select {
-      padding: 8px 5px 8px 35px;
-      border-radius: 5px;
       border: 1px solid #828282;
+      padding: 12px 5px 12px 35px;
+      color: #828282;
+      font-size: 14px;
+      border-radius: 5px;
+      width: 100%;
     }
   }
 }

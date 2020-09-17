@@ -9,25 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/5c7edfd842.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"
-      media="all"
-      rel="stylesheet"
-    />
-    <link
-      href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css"
-      media="all"
-      rel="stylesheet"
-    />
-    <link
-      href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css"
-      media="all"
-      rel="stylesheet"
-    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
     <main>
@@ -35,26 +17,32 @@
       <section class="contact">
         <div class="contact--info">
           <h4>Contact information</h4>
-          <form action="" method="get" class="form">
+          <form action="#" method="get" class="form">
             <div class="form-email">
               <label for="email">Email </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                placeholder="Enter your email..."
-              />
+              <div class="input-area">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="Enter your email..."
+                />
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </div>
             </div>
             <div class="form-phone">
               <label for="phone">Phone </label>
-              <input
-                type="number"
-                name="phone"
-                id="phone"
-                required
-                placeholder="Enter your phone..."
-              />
+              <div class="input-area">
+                <input
+                  type="number"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder="Enter your phone..."
+                />
+                <i class="fas fa-phone-alt" aria-hidden="true"></i>
+              </div>
             </div>
           </form>
         </div>
@@ -63,52 +51,70 @@
           <form action="" method="get" class="form">
             <div class="form-name">
               <label for="name">Full name </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                required
-                placeholder="Enter your Full name..."
-              />
+              <div class="input-area">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="Enter your Full name..."
+                />
+                <i class="fas fa-user" aria-hidden="true"></i>
+              </div>
             </div>
             <div class="form-address">
               <label for="address">Address </label>
-              <input
-                type="text"
-                name="address"
-                id="address"
-                required
-                placeholder="Enter your address..."
-              />
+              <div class="input-area">
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  required
+                  placeholder="Enter your address..."
+                />
+                <i class="fas fa-home" aria-hidden="true"></i>
+              </div>
             </div>
             <div class="form-city">
               <label for="city">City</label>
-              <input
-                type="text"
-                name="city"
-                id="city"
-                required
-                placeholder="Enter your city..."
-              />
+              <div class="input-area">
+                <input
+                  type="text"
+                  name="city"
+                  id="city"
+                  required
+                  placeholder="Enter your city..."
+                />
+                <i class="fas fa-city" aria-hidden="true"></i>
+              </div>
             </div>
             <div class="country-postcode">
-              <label for="country-select">Country</label>
-              <select name="countries" id="country-select">
-                <option value="turkey" selected>Turkey</option>
-                <option value="germany">Germany</option>
-                <option value="usa">USA</option>
-                <option value="canada">Canada</option>
-                <option value="uk">UK</option>
-              </select>
-
-              <label for="postcode">Post Code</label>
-              <input
-                type="text"
-                id="postcode"
-                name="postcode"
-                required
-                placeholder="Enter your postal code..."
-              />
+              <div class="country">
+                <label for="country-select">Country</label>
+                <div class="input-area">
+                  <i class="fas fa-globe-europe" aria-hidden="true"></i>
+                  <select name="countries" id="country-select">
+                    <option value="turkey" selected>Turkey</option>
+                    <option value="germany">Germany</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                  </select>
+                </div>
+              </div>
+              <div class="postcode">
+                <label for="postcode">Post Code</label>
+                <div class="input-area">
+                  <i class="fas fa-mail-bulk" aria-hidden="true"></i>
+                  <input
+                    type="text"
+                    id="postcode"
+                    name="postcode"
+                    required
+                    placeholder="Enter your postal code..."
+                  />
+                </div>
+              </div>
             </div>
             <div>
               <input

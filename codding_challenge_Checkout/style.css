@@ -1,3 +1,8 @@
+@media (max-width: 900px) {
+  main {
+    grid-template-areas: "header" "product" "contact" "button" !important;
+  }
+}
 body {
   margin: 0 auto;
   padding: 0;
@@ -29,6 +34,29 @@ body main section div:nth-child(5) {
   display: flex;
   margin: 20px 0;
 }
+body main section .contact--info {
+  margin-bottom: 60px;
+}
+body main section .country {
+  margin-right: 20px;
+}
+body main section .country-postcode {
+  display: flex;
+  margin-top: 30px;
+}
+body main section .input-area {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+body main section .input-area i {
+  position: absolute;
+  color: #828282;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 3%;
+}
 body main aside {
   grid-area: product;
   border-radius: 10px;
@@ -36,17 +64,20 @@ body main aside {
   padding: 10px 20px;
   position: relative;
   width: 60%;
+  height: 70%;
   left: 20%;
 }
 body main aside .fazi {
   margin-top: 40px;
 }
 body main aside .fazi .details {
+  font-family: "Montserrat", sans-serif;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  border-top: 1px solid gray;
-  padding: 0;
-  margin-bottom: -15px;
+  border-top: 1px solid #bdbdbd;
+  height: 40px;
+  width: 100%;
 }
 body main aside .product {
   display: flex;
@@ -88,6 +119,7 @@ body main aside .product .quantity-controller {
   display: flex;
   justify-content: space-around;
   width: 40%;
+  position: relative;
 }
 body main aside img {
   width: 30%;
@@ -96,11 +128,12 @@ body main aside img {
 }
 body main .continue {
   grid-area: button;
-  width: 20%;
+  width: 15%;
   padding: 14px 0;
   border-radius: 10px;
   background-color: #f2994a;
   color: #fff;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
   border: none;
@@ -113,6 +146,7 @@ body main input {
   font-size: 14px;
   border-radius: 5px;
   width: 100%;
+  height: 22px;
 }
 body main input[type=checkbox] {
   width: 10%;
@@ -128,9 +162,12 @@ body main label {
   display: block;
 }
 body main select {
-  padding: 8px 5px 8px 35px;
-  border-radius: 5px;
   border: 1px solid #828282;
+  padding: 12px 5px 12px 35px;
+  color: #828282;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

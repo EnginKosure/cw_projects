@@ -1,0 +1,9 @@
+@media (max-width: 900px) {
+  main {
+    grid-template-areas:
+      "header"
+      "product"
+      "contact"
+      "button" !important;
+  }
+}
