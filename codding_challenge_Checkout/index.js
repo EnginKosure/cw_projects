@@ -18,20 +18,17 @@ function update1(e){
         discountPrice1 =dp1c*counter;
         total=discountPrice1+discountPrice2;
         console.log(normalPrice1);   
-    }
-    else if(e=='-')
-    {
+    }else if(e=='-'){
         if(counter > 1){
             counter -=  1;
             normalPrice1 =  np1c*counter;
             discountPrice1 =dp1c*counter;
             total=discountPrice1+discountPrice2;
-        }
-        else if(counter== 1){
+        }else if(counter== 1){
             counter -=  1;
             total=discountPrice2+0;
             normalPrice1 =  dp1c;
-        discountPrice1 =dp1c;
+            discountPrice1 =dp1c;
         }
     }
     document.getElementsByClassName('counter')[0].innerText=counter;
