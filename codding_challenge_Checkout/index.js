@@ -31,13 +31,13 @@ function update1(e){
             counter -=  1;
             total=discountPrice2+0;
             normalPrice1 =  dp1c;
-        discountPrice1 =dp1c;
+            discountPrice1 =dp1c;
         }
     }
     document.getElementsByClassName('counter')[0].innerText=counter;
-    document.getElementsByClassName('price1-discounted')[0].innerText=discountPrice1.toFixed(2);
-    document.getElementsByClassName('price1')[0].innerText=normalPrice1.toFixed(2);
-    document.getElementsByClassName('total')[0].innerText=total.toFixed(2); 
+    document.getElementsByClassName('price1-discounted')[0].innerText='$'+discountPrice1.toFixed(2);
+    document.getElementsByClassName('price1')[0].innerText='$'+normalPrice1.toFixed(2);
+    document.getElementsByClassName('total')[0].innerText='$'+total.toFixed(2); 
 };
 // update1()
 let discountPrice2=parseFloat(document.getElementById('price2-discounted').innerHTML.replace('$',''));
@@ -78,8 +78,8 @@ function update2(e){
         }
     }
     document.getElementsByClassName('counter')[1].innerText = counter;
-    document.getElementById('price2-discounted').innerHTML=discountPrice2.toFixed(2);
-    document.getElementsByClassName('price2')[0].innerText=normalPrice2.toFixed(2);
-    document.getElementsByClassName('total')[0].innerText=(total).toFixed(2);
+    document.getElementById('price2-discounted').innerHTML='$'+discountPrice2.toFixed(2);
+    document.getElementsByClassName('price2')[0].innerText='$'+normalPrice2.toFixed(2);
+    document.getElementsByClassName('total')[0].innerText='$'+(total).toFixed(2);
 };
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
