@@ -32,6 +32,13 @@ function update1(e){
             total=discountPrice2+0;
             normalPrice1 =  dp1c;
             discountPrice1 =dp1c;
+        }else if(counter==0){
+            counter =0
+            
+            if (parseInt(document.getElementsByClassName('counter')[0].innerText)==0 &&parseInt(document.getElementsByClassName('counter')[1].innerText)==0){
+                total=0
+            }
+            
         }
     }
     document.getElementsByClassName('counter')[0].innerText=counter;
@@ -72,10 +79,16 @@ function update2(e){
             total=discountPrice1+0;
             normalPrice2 =  np2c;
             discountPrice2 =dp2c;
+            total=discountPrice1+0;
         }else if(counter==0){
             counter =0
-            total=discountPrice1+0;
+            
+            if (parseInt(document.getElementsByClassName('counter')[0].innerText)==0 &&parseInt(document.getElementsByClassName('counter')[1].innerText)==0){
+                total=0
+            }
+            
         }
+
     }
     document.getElementsByClassName('counter')[1].innerText = counter;
     document.getElementById('price2-discounted').innerHTML='$'+discountPrice2.toFixed(2);
