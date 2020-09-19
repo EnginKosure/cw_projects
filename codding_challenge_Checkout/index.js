@@ -96,3 +96,57 @@ function update2(e){
     document.getElementsByClassName('total')[0].innerText='$'+(total).toFixed(2);
 };
 // :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+const valueEl = document.querySelector('.value')
+
+function counter(state = 0, action) {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1
+    case 'DECREMENT':
+      return state - 1
+    default:
+      return state
+  }
+}
+
+const store = Redux.createStore(counter)
+
+function render() {
+  valueEl.innerHTML = store.getState().toString()
+}
+
+render()
+store.subscribe(render)
+
+document.querySelector('.increment')
+  .addEventListener('click', function () {
+    store.dispatch({ type: 'INCREMENT' })
+  })
+  document.querySelector('.increment2')
+  .addEventListener('click', function () {
+    store.dispatch({ type: 'INCREMENT' })
+  })
+
+document.querySelector('.decrement')
+  .addEventListener('click', function () {
+    store.dispatch({ type: 'DECREMENT' })
+  })
+  document.querySelector('.decrement2')
+  .addEventListener('click', function () {
+    store.dispatch({ type: 'DECREMENT' })
+  })
+
+document.getElementById('incrementIfOdd')
+  .addEventListener('click', function () {
+    if (store.getState() % 2 !== 0) {
+      store.dispatch({ type: 'INCREMENT' })
+    }
+  })
+
+document.getElementById('incrementAsync')
+  .addEventListener('click', function () {
+    setTimeout(function () {
+      store.dispatch({ type: 'INCREMENT' })
+    }, 1000)
+  })

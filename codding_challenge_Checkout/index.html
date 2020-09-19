@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://unpkg.com/redux@latest/dist/redux.min.js"></script>
   </head>
   <body>
     <main>
@@ -139,11 +140,13 @@
             </p>
             <div class="quantity-controller">
               <button class="plus">
-                <i class="fas fa-minus" onclick="update1('-')"></i>
+                <i class="fas fa-minus decrement"></i>
+                <!-- onclick="update1('-')" -->
               </button>
-              <p class="counter">1</p>
+              <p class="counter value">1</p>
               <button class="plus">
-                <i class="fas fa-plus" onclick="update1('+')"></i>
+                <i class="fas fa-plus increment"></i>
+                <!-- onclick="update1('+')" -->
               </button>
             </div>
           </div>
@@ -158,11 +161,13 @@
             </p>
             <div class="quantity-controller">
               <button class="plus">
-                <i class="fas fa-minus" onclick="update2('-')"></i>
+                <i class="fas fa-minus decrement2"></i>
+                <!-- onclick="update2('-')" -->
               </button>
-              <p class="counter">1</p>
+              <p class="counter value">1</p>
               <button class="plus">
-                <i class="fas fa-plus" onclick="update2('+')"></i>
+                <i class="fas fa-plus increment2"></i>
+                <!-- onclick="update2('+')" -->
               </button>
             </div>
           </div>
